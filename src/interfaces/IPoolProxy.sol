@@ -9,6 +9,9 @@ interface IPoolProxy {
 
     function set_many_burners(address[20] memory, address[20] memory) external;
 
+    function commit_set_admins(address, address) external;
+    function apply_set_admins() external;
+
     function transfer_ownership(address, address) external;
     function set_admin_fee(address, uint256) external;
     function set_fee(address, uint256) external;
